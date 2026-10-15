@@ -1,0 +1,92 @@
+﻿# .NET build output
+**/bin/
+**/obj/
+[Bb]in/
+[Oo]bj/
+
+# Published binaries and installer output
+/publish/
+/artifacts/
+/release/
+
+# IDE and OS files
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Logs and machine-specific diagnostic output
+*.log
+/agent-output.txt
+/nvme-output.txt
+
+# Local secrets and certificates
+.env
+.env.*
+!.env.example
+**/appsettings.Local.json
+*.pfx
+*.p12
+*.key
+*.publishsettings
+
+# Backups
+*.backup
+*.bak
+
+# Signing material - never commit private keys
+/UpdateSigning/release-private.pem
+/UpdateSigning/*.pfx
+/UpdateSigning/*.p12
+/UpdateSigning/*.key
+
+# Local configuration and production data
+config.json
+**/config.json
+**/data/
+**/logs/
+*.log
+
+# Temporary builds, test executables and rollback copies
+/Agent-Backup-*/
+/Agent-WindowFix-Backup/
+/Agent-WindowFix-Test/
+/AgentManagerAgent.HistoryTest/
+/Production-Windowless-Candidate-*/
+/Production-Windowless-Final/
+/Production-Windowless-SelfTest/
+/Production-Windowless-Source/
+/Rollback-Simulation-Test/
+/Update-Rollback/
+/Updater-Install-Test/
+/Updater-Prep-Backup/
+/Updater-Prep-Backup-*/
+/Updater-Staging/
+/Updater-Test/
+/Updater-V2-TestBuild/
+
+# Local development and experimental projects
+/Agent-WindowFix-Backup-20261015/
+/Agent-WindowFix-Test/
+/AssetManagerAgent.HistoryTest/
+/Production-Windowless-Candidate-3/
+/Installer/
+/publish/
+/UpdateSigning/
+/Updater-Prep-Backup-20261014-155609/
+/Updater-V2-TestBuild/
+
+# Local diagnostic and operating-system files
+/.DS_Store
+/AHT-Asset-Manager-Task-Current.xml
+/MacOSCollector.cs.backup
+
+# All source and editor backup files
+*.bak
+*.bak-*
+*.backup
+*.backup-*
+*.cs.bak*
+*.csproj.bak*
+*.xaml.bak*

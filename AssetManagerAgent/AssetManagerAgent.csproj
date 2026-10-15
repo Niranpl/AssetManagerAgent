@@ -1,13 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\AssetManagerAgent.Core\AssetManagerAgent.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Management" Version="10.0.12" />
-  </ItemGroup>
-
   <PropertyGroup>
     <Version>2.0.1</Version>
     <AssemblyVersion>2.0.1.0</AssemblyVersion>
@@ -19,5 +11,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-</Project>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetManagerAgent.Core\AssetManagerAgent.Core.csproj" />
+    <PackageReference Include="System.Management" Version="10.0.12" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="AssetManagerAgent\**\*.cs" />
+    <Compile Remove="AssetManagerAgent.Installer\**\*.cs" />
+    <Compile Remove="AssetManagerAgent.Updater\**\*.cs" />
+    <Compile Remove="**\bin\**\*.cs" />
+    <Compile Remove="**\obj\**\*.cs" />
+  </ItemGroup>
+
+</Project>

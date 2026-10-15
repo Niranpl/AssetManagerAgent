@@ -90,3 +90,6 @@ config.json
 *.cs.bak*
 *.csproj.bak*
 *.xaml.bak*
+
+# Exclude accidental nested solution copy
+/AssetManagerAgent/AssetManagerAgent/
